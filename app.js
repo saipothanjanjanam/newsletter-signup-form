@@ -49,7 +49,7 @@ app.post("/", function(req, res) {
   });
 
   const apiKey = String(process.env.LOCAL_API_KEY || process.env.API_KEY);
-  const audienceId = String(process.env.LOCAL_AUD_KEY || process.env.AUDKEY);
+  const audienceId = String(process.env.LOCAL_AUD_KEY || process.env.AUD_KEY);
   const apiServer = String(process.env.LOCAL_MC_SERVER || process.env.MC_SERVER);
   const mailChimpUrl = "https://us" + apiServer + ".api.mailchimp.com/3.0/lists/" + audienceId + "/members/";
 
